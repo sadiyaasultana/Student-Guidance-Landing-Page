@@ -1,0 +1,204 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5faff;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #00bfff;
+  padding: 1rem 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-list li a.btn {
+  white-space: nowrap ;
+}
+
+.nav-list li a:hover {
+  background-color: #009acd;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #00bfff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #009acd;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #e0f7ff;
+  border-bottom: 2px solid #00bfff;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #007acc;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+/* Section Headings */
+section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #007acc;
+}
+
+/* About Section */
+.about p, .contact p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Benefits Section */
+.benefits ul {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.benefits li {
+  background-color: #d0f0ff;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+/* How It Works */
+.how-it-works ol {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 1.2rem;
+}
+
+.how-it-works li {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+}
+
+/* Testimonials */
+.testimonials blockquote {
+  background-color: #d0f7ff;
+  border-left: 5px solid #00bfff;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+/* FAQs */
+.faqs details {
+  background-color: #e0f7ff;
+  margin: 0.8rem auto;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 800px;
+  cursor: pointer;
+}
+
+.faqs summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #00bfff;
+  color: #fff;
+}
+
+.cta h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #007acc;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .btn {
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
